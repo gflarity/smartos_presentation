@@ -6,13 +6,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	
+
 	<title>SmartOS</title>
-	
+
 	<meta name="description" content="SmartOS Presentation">
 	<meta name="author" content="Geoff Flarity">
 	<meta name="viewport" content="width=1024, user-scalable=no">
-	
+
 	<!-- Core and extension CSS files -->
 	<link rel="stylesheet" href="../core/deck.core.css">
 	<link rel="stylesheet" href="../extensions/goto/deck.goto.css">
@@ -20,14 +20,14 @@
 	<link rel="stylesheet" href="../extensions/navigation/deck.navigation.css">
 	<link rel="stylesheet" href="../extensions/status/deck.status.css">
 	<link rel="stylesheet" href="../extensions/hash/deck.hash.css">
-	
+
 	<!-- Theme CSS files (menu swaps these out) -->
 	<link rel="stylesheet" id="style-theme-link" href="../themes/style/web-2.0.css">
 	<link rel="stylesheet" id="transition-theme-link" href="../themes/transition/horizontal-slide.css">
-	
+
 	<!-- Custom CSS just for this page -->
 	<link rel="stylesheet" href="introduction.css">
-	
+
 	<script src="../modernizr.custom.js"></script>
 </head>
 
@@ -65,7 +65,7 @@
          <li>
             <h4>Questions?</h4>
         </li>
-        
+
 	</ol>
 </section>
 
@@ -74,15 +74,15 @@
     <h3>OpenSolaris</h3>
     <ul>
         <li class="slide">In 2005 Sun Microsystems open sourced Solaris</li>
-        <li class="slide">In 2007 Sun released a full distrobution called OpenSolaris</li>
+        <li class="slide">In 2007 Sun released a full distribution called OpenSolaris</li>
         <li class="slide">This move was prompted by pressure from Linux as it gained enterprise traction</li>
         <li class="slide">The BSD community was the real winner here:
             <ul>
-                <li>License allowed closed source derivatives => GPL incompatible</li>         
+                <li>License allowed closed source derivatives => GPL incompatible</li>
                 <li>Sun middle management was too controlling failed to nurture a community</li>
             </ul>
         </li>
-        <li class="slide">Fast forward 2011: 
+        <li class="slide">Fast forward 2011:
             <ul>
                 <li>Oracle has assimilated Sun</li>
                 <li>OpenSolaris became Solaris 11 Express</li>
@@ -98,19 +98,19 @@
     <ul>
         <li class="slide">Illumos is the core OS forked from the last released build of OpenSolaris</li>
         <li class="slide">Developed lead by those defected kernel developers</li>
-        <li class="slide">Sponsored by the startups they work for (Joyent, Nexenta, Delphix etc)</li>
+        <li class="slide">Sponsored by the startups they work for (Joyent, Nexenta, Delphix etc.)</li>
         <li class="slide">Talent behind the core Solaris innovations (ZFS, Zones, DTrace ) are now part of the Illumos community</li>
     </ul>
-    
+
 </section>
 
 <section class="slide" id="themes">
 	<h2>What is SmartOS?</h2>
     <h3>Joyent</h3>
     <ul>
-        <li class="slide">Built SmartOS and ported KVM over to Illumos</li>        
+        <li class="slide">Built SmartOS and ported KVM over to Illumos</li>
         <li class="slide">Runs it's own public cloud which competes with Amazon</li>
-        <li class="slide">Will license SmartDataCenter orchestration platform to others</li>    
+        <li class="slide">Will license SmartDataCenter orchestration platform to others</li>
         <li class="slide">Are the corporate sponsor of Node.JS</li>
     </ul>
 </section>
@@ -119,11 +119,11 @@
     <h2>What is SmartOS?</h2>
     <h3>SmartOS</h3>
     <ul>
-        <li class="slide">A minimalist Illumos distrobution designed to be hypervisor</li>
+        <li class="slide">A minimalist Illumos distribution designed to be hypervisor</li>
         <li class="slide">Brings the powerful features of Solaris to Linux host management</li>
         <li class="slide">Small footprint</li>
         <li class="slide">Safely and easily remotely updatable</li>
-        <li class="slide">Free, open source with an active community</li>        
+        <li class="slide">Free, open source with an active community</li>
     </ul>
 </section>
 
@@ -132,11 +132,11 @@
     <h3>ZFS</h3>
     <ul>
         <li class="slide">Export block devices for VM use</li>
-        <li class="slide">Linux sees a simple single drive, in reality a ZFS RAID beast</li>    
-        <li class="slide">Instaneous incremental live snapshots of block devices</li>
-        <li class="slide">Snapshots can be easily exported/imported</li>        
-        <li class="slide">Near instaneous local cloning of VMs</li>
-        <li class="slide">Clones initially take up virtually no additionalspace</li>
+        <li class="slide">Linux sees a simple single drive, in reality a ZFS RAID beast</li>
+        <li class="slide">Instantaneous incremental live snapshots of block devices</li>
+        <li class="slide">Snapshots can be easily exported/imported</li>
+        <li class="slide">Near instantaneous local cloning of VMs</li>
+        <li class="slide">Clones initially take up virtually no additional space</li>
     </ul>
 </section>
 
@@ -146,9 +146,9 @@
     <ul>
         <li class="slide">Zones are Operating System level virtualization abstractions</li>
         <li class="slide">Secure</li>
-        <li class="slide">Low overhead (CPU, Memmory)</li>
-        <li class="slide">Fine grained resource control (CPU, Memmory, IO)</li>
-        <li class="slide">KVM can be run inside zones and benefit from their features</li>    
+        <li class="slide">Low overhead (CPU, Memory)</li>
+        <li class="slide">Fine grained resource control (CPU, Memory, IO)</li>
+        <li class="slide">KVM can be run inside zones and benefit from their features</li>
     </ul>
 </section>
 
@@ -157,10 +157,10 @@
     <h3>DTrace</h3>
     <ul>
         <li class="slide">DTrace provides fast and safe <b>runtime</b> system introspection</li>
-        <li class="slide">Lock profiling, Kernel/Process stack traces, syscall latencies, etc</li>
+        <li class="slide">Lock profiling, Kernel/Process stack traces, syscall latencies, etc.</li>
         <li class="slide">KVM on SmartOS includes new DTrace Providers for:
             <ul>
-                <li>Virutal Disk Throughput</li>
+                <li>Virtual Disk Throughput</li>
                 <li>Virtual NIC Throughput</li>
                 <li>Virtual Disk IOps</li>
                 <li>Hardware Interrupts</li>
@@ -181,11 +181,11 @@
         <li class="slide">Joyent is the corporate sponsor and runs http://no.de</a>
         <li class="slide">Joyent committed to making Illumos the premier platform for Node.js:
             <ul>
-                <li>DTrace providers for safe runtime introspection</li>    
+                <li>DTrace providers for safe runtime introspection</li>
                 <li>MDB (Solaris Debugger) modules for inspecting state, including core dumps</li>
-                <li>Support</li>    
+                <li>Support</li>
             </ul>
-        </li>    
+        </li>
     </ul>
 </section>
 
@@ -193,7 +193,7 @@
     <h2>Concerns</h2>
     <h3></h3>
     <ul>
-        <li class="slide">KVM port relatively new though Joyent running it in production</li>        
+        <li class="slide">KVM port relatively new though Joyent running it in production</li>
         <li class="slide">SmartOS/SmartMachines are Unix systems, but it's not Linux</li>
         <li class="slide">General Illumos documentation is sparse (Solaris 11 Express documentation used in practice)</li>
         <li class="slide">Smaller Community</li>
